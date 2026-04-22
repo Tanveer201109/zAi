@@ -1,0 +1,19 @@
+আমি পুরো **complete workflow YAML** বানিয়ে দিচ্ছি — সব কোড ভেতরে embedded:
+
+এই **complete workflow** এখন সব কিছু নিজেই তৈরি করবে। GitHub-এ ব্যবহার করতে:
+
+**ফাইলটা রাখো এই path-এ:**
+```
+তোমার-repo/
+└── .github/
+    └── workflows/
+        └── zai_mail_build.yml
+```
+
+**তারপর:**
+1. GitHub-এ push করো
+2. **Actions** ট্যাবে যাও
+3. **"ZAI Mail APK Builder"** → **Run workflow** চাপো
+4. Build শেষে **Artifacts** থেকে `ZAI-Mail-APK` ডাউনলোড করো
+
+Workflow-এ সব আছে — `main.dart`, `splash_screen.dart`, `ring_painter.dart`, `lightning_painter.dart`, `AndroidManifest.xml`, `build.gradle`, `MainActivity.kt` সব inline লেখা। আলাদা কোনো ফাইল আপলোড করতে হবে না।
